@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: aqua;
+            text-decoration: none; /*Tira o sublinhado dos links*/
+            font-weight: bold; /*Deixa em negríto*/
+        }
+
+        a:visited{ /*Sevre para mudar a cor do link caso você tenha clicado*/
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline; /*Deixa o texto sublinhado*/
+        }
+
+        a:active{ /*Cor quando clica*/
+            color: yellow;
+        }
+
+        .especial::before{ /*Oque estiver aqui ira aparecer antes do conteúdo*/
+            content: "--> ";
+        }
+
+        a::after{ /*Oque estiver aqui ira aparecer depois do conteúdo*/
+            content: " <--";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <h1 class="especial">Olha</h1>
+        <li><a href="https://github.com/?locale=pt-br" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

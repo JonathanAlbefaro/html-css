@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Responsivo</title>
+
+<style>
+    body{
+        background-color: gray;
+    }
+    main{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+
+       min-width: 320px; /*largura dos celurares mais antigos,
+       porem você pode reduzir mais para que tenha menos rolagem*/
+       max-width: 800px;
+       margin: auto;
+    }
+
+    img{
+        width: 100%;
+    }
+</style>
+
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus molestias sapiente quam, aspernatur sit laborum dicta, commodi dolor, nam est ducimus inventore omnis reprehenderit veritatis modi accusamus voluptate? Sapiente?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quidem ipsa cumque nihil sed minima, praesentium perspiciatis illum tempore consequuntur nesciunt dolorem exercitationem autem vitae voluptatum voluptatem placeat nobis Lorem ipsum dolor sit amet consectetur adipisicing elit. Obca ecati delectus aspernatur accusantium ipsa harum cumque pariatur repudiandae autem eaque iste inventore odit, sequi tempora natus quasi error dolores culpa fugit?</p>
+        <picture>
+            
+            <source media="(max-width: 600px)" srcset="../imagens\irina-blok-pq.jpg" >
+            <img src="../imagens/irina-blok.jpg" alt="Criadora do Android">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est et animi, quia quod suscipit reprehenderit, voluptatem mollitia nihil officia quibusdam, perspiciatis non sed vero assumenda aspernatur quas labore tempora omnis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil consequatur quibusdam aliquid, tenetur corporis recusandae animi itaque mollitia, nesciunt consectetur cum exercitationem! Reprehenderit quod accusamus ullam adipisci, distinctio minima excepturi? Lorem</p>
+    </main>
+</body>
+</html>

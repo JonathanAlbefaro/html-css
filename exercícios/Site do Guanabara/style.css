@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        @font-face {
+            font-family: 'IDroid';
+            src: url(fonts/IDroid/IDroidBold.otf) format('opentype');
+        }
+        body{
+           font-family: "Roboto Mono", monospace, sans-serif;
+ 
+            background-color: rgb(235, 200, 159);
+            margin: 0px;
+            
+        }
+        header{
+           background: linear-gradient(to top, #324232, #49A86D);
+            height: 250px;
+            width: auto;
+            padding: 10px;
+            
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+        }
+
+        h2{
+    
+            text-align: left;
+            color: #324232;
+            padding-left: 23px;
+            background: linear-gradient(to right,  #57c581, #60cc8a, #94e9b5, #baf3d0, #e8f8ee, #f0f7f3);
+           
+        }
+        
+        a{
+            color: #99b699;
+            text-decoration: none;
+            font-weight: bold;
+            padding-left: 6px;
+           
+        }
+        header >p{
+            text-align: center;
+            color: white;
+        }
+
+        nav{
+            padding-right: 10px;
+            padding-top: 81px;
+            text-align: left;
+        }
+
+        nav > a:hover {
+            color: #2CDB6E;
+            text-decoration: none;
+            
+            
+        }
+
+        main{
+            height: 3000px;
+            width: 835px ;
+            background-color: white;
+            margin: -21px auto 62px auto;
+
+        }
+
+        main > h1{
+            text-align: left;
+            color: #324232;
+            padding-left: 20px;
+           
+        }
+
+        p{
+            text-indent: 40px;
+            
+        }
+
+      picture {
+        display: flex;
+        justify-content: center; /* Centraliza na horizontal */
+        align-items: center;     /* Centraliza na vertical */
+      }
+
+          .verde-claro{
+            background-color: #57c581;
+            border-radius: 1px;
+            font-weight: bold;
+        }
+
+        .verde-escuro{
+            color:  #146114;
+            font-weight: bold;
+         
+        }
+
+        .video{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 750px ;  
+            height: 500px;
+            border-width: 27px 44px 27px 40px;
+            border-style: solid;
+            border-color: #324232;;      
+        }
+
+        .aprender-mais{
+             width: 757px; 
+             height: 500px;
+             background-color: #49A86D; 
+             padding: 0px 20px 20px 20px;   
+             margin: 27px auto;
+             border: 1px;
+             border-radius: 10px;
+             }
+
+             div{
+                width: 777px;
+                height: 50px;
+                background-color: #324232;
+                padding-right: 20px;
+                margin-left: -20px;
+                border: 1px;
+                border-radius: 9px 9px  0px 0px;
+
+                
+             }

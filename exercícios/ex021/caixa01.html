@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+       h1{
+        background-color: aqua;
+        height: 300px;
+        width: 300px;
+        border: 10px solid darkslategray;
+      
+        padding: 10px; /*desse jeito ele vai seguir a ordem que está acima, no sentido anti horário. Se caso todos os lados tiverem a mesma quantidade de px, basta só colocar 1 valor, caso queria colocar 2 valores a parte de cima e de baixo terão os px do primerio e os da direita e esquuerda o segundo. Só é necessário usar quatro valores se cada parte tiver um px especifico ou apenas uma.*/
+
+        /* margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        margin-left: 10px; */
+
+         margin: 10px auto 10px auto; /*desse jeito ele vai seguir a ordem que está acima, no sentido anti horário. Se caso todos os lados tiverem a mesma quantidade de px, basta só colocar 1 valor, caso queria colocar 2 valores a parte de cima e de baixo terão os px do primerio e os da direita e esquuerda o segundo. Só é necessário usar quatro valores se cada parte tiver um px especifico ou apenas uma.*/
+        
+         /* outline-width: 10px;
+        outline-style: auto;
+        outline-color: salmon; */
+
+        outline: 10px auto salmon;
+       }
+
+       a{
+
+        border-width: 10px;
+        border-style: groove;
+        border-color: red;
+       }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas os <a href="#">são exemplos de caixas inline-level</a></p>
+</body>
+</html>

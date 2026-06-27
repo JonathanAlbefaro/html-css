@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            margin: 0px;
+        }
+
+        header{
+         
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 9px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        article > aside{
+            background-color: rgb(160, 158, 158);
+        }
+
+        aside > p{
+            padding: 5px;
+        }
+        
+        nav{
+            background-color: rgb(119, 116, 111);
+            padding: 3px;
+            box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.5); /*comesse sempre por 1px 1px 1px black. Também sempre deixe a transparência na metáde ou abaixo.*/
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /*a div terá um formato de uma bola*/
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu perfil no RoyaleAPI</h1>
+        <nav> <!--Barra de Navegação-->
+            <a href="https://royaleapi.com/player/P9VY2G2G0" target="_blank">Perfil</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Principal-->
+       
+        <section id="assuntos">
+        <p>Esportes Política Tecnologia</p>
+       </section>
+
+       <section id="noticias"> <!--Sessão-->
+         <article> <!--Artigo-->
+            <h2>Notícia sobre o Brasil</h2>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate architecto ipsam labore ab soluta reprehenderit, non mollitia autem id cumque neque illum aliquam nisi. Adipisci exercitationem amet ullam delectus minima.</p>
+
+            <aside> <!--Aparte-->
+                <p>Artigo escrio por José da Sila</p>
+            </aside>
+         </article>
+
+         <article>
+            
+         </article>
+       </section>
+    </main>
+
+    <footer>  <!--Parte de baixo-->
+        <p>Desenvolvido pelo CursoEmVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
