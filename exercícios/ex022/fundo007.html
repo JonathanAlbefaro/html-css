@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        #container{
+            position: relative; /*posissão relative é á possisão padrão dos conteúdos em html*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%; /*dessa forma o conteúdo irá ocupar todo espação da caixa do seu conteúdo de forma proporcional*/
+        }
+
+        #conteúdo{
+            position: absolute; /*Quando deixamos a posição em absolte podemos configurar propriedade com left, top etc.*/
+            background-size: 100% 100%;   
+            background-image: url("imagens/target001.png");
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%); /*Serve pra mudar a posição da caixa, podendo ter valores positivos + que mechem pra baixo e valores negativos que mechem pracima -*/
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteúdo">
+
+        </article>
+    </section>
+</body>
+</html>
