@@ -7,40 +7,46 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sriracha&display=swap');
         *{
             margin: 0px;
             padding: 0px;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+        :root{
+            --font0: Verdana, Geneva, Tahoma, sans-serif;
+            --font1: "Passion One", sans-serif;
+            --font2: "Sriracha", cursive;
+        }
 
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
 
 
-        body{
-            margin: auto;
+        html, body{
+           min-height: 100vh;
+           font-family: var(--font2);
         }
 
         header{
-            font-family: "Passion One", sans-serif;
-            font-weight: 900;
+            font-family: var(--font1);
+            font-weight: bold;
             font-style: normal;
             background-color: black;
-            height: 120px;
             text-align: center;
-            
+            font-variant: small-caps;
             padding: 55px;
-            color: white;
+             padding-bottom: 55px;
+
+          color: white;
            margin-top: 0px;
         }
 
         header > h1{
-            font-size: 70px;
+            font-size: 8vw;
         }
 
-        header > p{
-            font-size: 20px;
-        }
+       header p {
+        font-size: 3vw;
+       }
 
         header a{
             text-decoration: none;
@@ -117,6 +123,7 @@
         }
 
         footer a{
+            font-family: var(--font0);
             text-decoration: none;
             color: white;
             font-weight: bold;
