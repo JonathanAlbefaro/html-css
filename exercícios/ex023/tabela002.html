@@ -9,6 +9,12 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
 
         table{
             width: 500px;
@@ -25,6 +31,14 @@
             color: white;
         }
 
+        tbody > tr:nth-child(odd){ /*odd significa ímpar, ou seja a primeira linha será lightgray, já a próxima não e depois volta a ser lightgray e assim por diante. Você também pode configurar essa pseudo-classe com 2n, que básicamente ele diz pro css pra ele deixar o segundo item da tabela lighgray e assim por diante. Se fosse 3n ou mais seguiria a mesma lógica do 2n*/
+            background-color: white;
+        }
+
+         tbody > tr:nth-child(even){ /*even significa par, ou seja a segunda linha será yellow, já a próxima não e depois volta a ser yellow e assim por diante. Você também pode configurar essa pseudo-classe com 2n, que básicamente ele diz pro css pra ele deixar o segundo item da tabela lighgray e assim por diante. Se fosse 3n ou mais seguiria a mesma lógica do 2n*/
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -35,6 +49,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+     CAPTION
         THEAD
          TR, TD, TH
         TBODY
@@ -43,10 +58,11 @@
          TR, TD, TH
     -->
          <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
                     <th>Estado</th>
-                    <th>População</th>
+                    <th style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,6 +75,10 @@
                   <td class="num">21 168 791</td>
                </tr>
                <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+               </tr>
+                 <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
                </tr>
