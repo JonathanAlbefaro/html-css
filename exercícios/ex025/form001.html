@@ -12,12 +12,19 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form> <!--Todo formulário deve estar dentro dessa tag form-->
-        <p>Nome: <input type="text" name="Nome" id=""></p> 
-        <p>Sobrenome: <input type="text" name="Sobrenome" id=""></p>
+    <form action="cadastro.php" method="post" autocomplete="off" >
+        <!--Todo formulário deve estar dentro dessa tag form.
+        
+        autocomplete=off faz com que não apareça sugestões nos formulários.
+        
+        action="cadastro.php" serve para o formlário saber para onde os dados devem ser enviados.-->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> 
+        <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
 
-        <!--inupt: serve para criar campos interativos em formulários. No nosso caso, utilizamos type=text, permitindo que possamos inserir informações no formluário. Type=submit serve pra criar um botão de enviar.-->
+        <!--inupt: serve para criar campos interativos em formulários. No nosso caso, utilizamos type=text, permitindo que possamos inserir informações no formluário. Type=submit serve pra criar um botão de enviar.--> 
+
+        <!--label: serve para melhor indentificação do formulário com base no id dele; o nome do id pode ser o mesmo nome do name e também o label faz com que au clicar no nome do formulário você automáticamente para o campo de digitação dele. Muito útil para celulares.-->>
     </form>
 </body>
 </html>
